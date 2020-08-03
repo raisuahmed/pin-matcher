@@ -93,6 +93,7 @@ input[type='text']:focus {
 
 .button:hover {
     background: #96bbe9;
+    color: black;
 }
 
 .blink-me {
@@ -110,6 +111,8 @@ input[type='text']:focus {
 
 .submit-btn:hover {
     background: #78a0d1;
+    color: #1b0a0a;
+    font-weight: bold;
 }
 
 .notify {
@@ -126,9 +129,12 @@ input[type='text']:focus {
     width: 35%;
     margin: 0 auto;
 }
-img{
+.cross{
     height: 15px;
     padding-bottom: 3px;
+}
+.right{
+    background-color: green;
 }
 
 .action-left {
