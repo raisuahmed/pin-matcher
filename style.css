@@ -140,4 +140,10 @@ input[type='text']:focus {
 .action-left {
     color: #FF3C5F;
     margin-top: 10px;
+    display: flex;
+    margin-left: 200px;
+    column-gap: 6px;
+
+    
+
 }
