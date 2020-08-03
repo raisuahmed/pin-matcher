@@ -15,13 +15,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
-                    <input id="number-generated" class="form-control" type="text" placeholder="Click On Generate Pin">
+                    <input id="generated-pin" class="form-control" type="text" placeholder="Click On Generate Pin">
                     <button onclick="generateRandom()" class="generate-btn">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="password-input" class="form-control" type="text" placeholder="Put Your Generated Pin">
+                    <input id="input-generatedPin" class="form-control" type="text" placeholder="Put Your Generated Pin">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
@@ -40,9 +40,8 @@
                                 <div onclick="numberButton(3)" class="button">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div onclick="deleteBtn()" class="button">
-                                    <</div> <div onclick="numberButton(0)" class="button">0
-                                </div>
+                               <div onclick="deleteButton()" class="button">  < </div> 
+                               <div onclick="numberButton(0)" class="button">0</div>
                                 <div onclick="clearEverything()" class="button">C</div>
                             </div>
                             <div>
@@ -55,8 +54,8 @@
                 </div>
             </div>
             <div class="notify-section">
-                <p id="misMatch" class="notify"> <img class="cross" src="Image/croos.png" alt=""> Pin Didn't Match, Please try again</p>
-                <p id="matched" class="notify"> <span class="right">☑️</span>  Pin Matched... Secret door is opening for you</p>
+                <p id="misMatch-notify" class="notify"> <img class="cross" src="Image/croos.png" alt=""> Pin Didn't Match, Please try again</p>
+                <p id="matched-notify" class="notify"> <span class="right">☑️</span>Pin Matched... Secret door is opening for you</p>
             </div>
         </div>
         <script src="script.js"></script>
