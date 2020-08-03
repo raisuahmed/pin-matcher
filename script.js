@@ -1,7 +1,3 @@
-// the notification invisible
-document.getElementById("matched-notify").style.display = "none";
-document.getElementById("misMatch-notify").style.display = "none";
-document.getElementById("action-left").style.display = "none";
 
 // Generate the random Number
 function generateRandom() {
@@ -16,12 +12,18 @@ function deleteButton() {
     let inputValue = document.getElementById('input-generatedPin').value;
     document.getElementById('input-generatedPin').value = inputValue.substring(0, inputValue.length - 1);
 }
+
 // active the clear button
+
 function clearEverything() {
     document.getElementById('input-generatedPin').value = "";
 }
+// the notification invisible
+document.getElementById("matched-notify").style.display = "none";
+document.getElementById("misMatch-notify").style.display = "none";
+document.getElementById("action-left").style.display = "none";
 
-// Active the submit Button
+// active the submit Button
 
 function submitButton() {
     let inputNumber = document.getElementById('input-generatedPin').value;
@@ -32,7 +34,7 @@ function submitButton() {
         document.getElementById("matched-notify").style.display = "block"
         document.getElementById("misMatch-notify").style.display = "none"
     } else {
-        document.getElementById("matched-Notify").style.display = "none"
+        document.getElementById("matched-notify").style.display = "none"
         document.getElementById("misMatch-notify").style.display = "block"
         tryLeft();
     }
