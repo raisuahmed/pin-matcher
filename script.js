@@ -6,20 +6,20 @@ function generateRandom() {
 // active the number buttons
 function numberButton(num) {
     document.getElementById('input-generatedPin').value = document.getElementById('input-generatedPin').value + num;
-    buttonAudio.play();
+    
 }
 // active the delete button
 function deleteButton() {
     let inputValue = document.getElementById('input-generatedPin').value;
     document.getElementById('input-generatedPin').value = inputValue.substring(0, inputValue.length - 1);
-    buttonAudio.play();
+   
 }
 
 // active the clear button
 
 function clearEverything() {
     document.getElementById('input-generatedPin').value = "";
-    buttonAudio.play();
+   
 }
 //the notification invisible
 document.getElementById("matched-notify").style.display = "none";
@@ -44,7 +44,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     else {
         
         document.getElementById("misMatch-notify").style.display = "block";
-        misMatchAudio.play();
+    
         document.getElementById("matched-notify").style.display = "none";
         
         let totalActionLeft = parseInt(document.getElementById("action-left").innerText);
