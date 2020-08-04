@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pin Generator</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,7 +17,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
-                    <input id="generated-pin" class="form-control" type="text" placeholder="Click On Generate Pin">
+                    <input id="generated-pin" class="form-control" type="text" >
                     <button onclick="generateRandom()" class="generate-btn">Generate Pin</button>
                 </div>
             </div>
@@ -40,7 +42,7 @@
                                 <div onclick="numberButton(3)" class="button">3</div>
                             </div>
                             <div class="calc-button-row">
-                               <div onclick="deleteButton()" class="button">  < </div> 
+                               <div onclick="deleteButton()" class="button"> <</div> 
                                <div onclick="numberButton(0)" class="button">0</div>
                                 <div onclick="clearEverything()" class="button">C</div>
                             </div>
@@ -57,6 +59,14 @@
                 <p id="misMatch-notify" class="notify"> <img class="cross" src="Image/croos.png" alt=""> Pin Didn't Match, Please try again</p>
                 <p id="matched-notify" class="notify"> <span class="right">☑️</span>Pin Matched... Secret door is opening for you</p>
             </div>
+             <!-- audio for misMatch and button -->
+            <audio id="misMatchAudio">
+                <source src="audio/beep-01a.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="buttonAudio">
+                <source src="audio/beep-07.mp3" type="audio/mpeg">
+            </audio>
+            
         </div>
         <script src="script.js"></script>
 </body>
