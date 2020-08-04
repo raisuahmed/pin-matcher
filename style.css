@@ -48,15 +48,15 @@ body {
 
 input[type='text'] {
     
-    background-color: #3D4153;
+    background-color: #fcfdff;
     padding: 10px 0px;
-    color: #ffffff;
+    color: #0a0101;
     width: 80%;
     margin: 0 auto;
     border: 2px solid #858299;
     height: 50px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 27px;
     text-align: center;
 }
 
